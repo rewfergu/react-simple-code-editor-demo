@@ -1,0 +1,35 @@
+#cooklang-editor {
+  caret-color: white;
+}
+pre.language-cooklang {
+  color: #d1d9e7;
+}
+
+pre.language-cooklang .token.ingredient-group,
+pre.language-cooklang .token.cookware-group,
+pre.language-cooklang .token.duration-group {
+  color: #e17165;
+}
+
+pre.language-cooklang .token.amount-group,
+pre.language-cooklang .token.duration-group,
+pre.language-cooklang .token.quantity-group {
+  color: #bedf78;
+}
+
+pre.language-cooklang .token.keyword,
+pre.language-cooklang .token.operator {
+  color: #b884db;
+}
+
+pre.language-cooklang .token.punctuation {
+  color: #f4c936;
+}
+
+pre.language-cooklang .cookware-group {
+  color: #76d1c0;
+}
+
+pre.language-cooklang .timer-group {
+  color: #bedf78;
+}
