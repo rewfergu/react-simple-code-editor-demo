@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Editor from 'react-simple-code-editor'
-import { highlight, languages } from 'prismjs'
+import Editor from '~/components/Editor'
+import Prism from 'prismjs'
 import 'prismjs/components/prism-cooklang'
 
 const defaultCooklang = `Mix @flour{1%cup} and @water{1/2%cup} in a #large bowl{} and serve.`
@@ -13,7 +13,7 @@ export default function CooklangEditor() {
 				value={cooklang}
 				onValueChange={cooklang => setCooklang(cooklang)}
 				highlight={cooklang =>
-					highlight(cooklang, languages.cooklang, 'cooklang')
+					Prism.highlight(cooklang, Prism.languages.cooklang, 'cooklang')
 				}
 				padding={16}
 				preClassName="language-cooklang"
